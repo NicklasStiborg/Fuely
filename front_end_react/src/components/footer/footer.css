@@ -1,0 +1,22 @@
+footer {
+    /* border-top: 1px solid rgb(180, 180, 180); */
+    left: 0;
+    bottom: 0;
+    height: 80px;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+}
+
+.lang-container li {
+    list-style-type: none;
+    padding-right: 5px;
+    padding-left: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.lang-container ul {
+    padding: 0;
+}

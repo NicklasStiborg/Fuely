@@ -1,0 +1,50 @@
+table img {
+    display: block;
+    max-width: 50px;
+    height: auto;
+    float: left;
+    margin-right: 1.5%;
+    overflow: hidden;
+}
+
+th {
+    text-align: left;
+}
+
+h1 {
+    margin-top: 10px;
+    font-size: 26px;
+}
+
+img {
+    padding-right: 10px;
+}
+
+.leftAlign {
+    float: left;
+}
+
+.leftAlign td {
+    margin-left: 10%;
+}
+
+.rowItems {
+    text-align: center;
+    vertical-align: sub;
+}
+
+.rowItems p {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding-top: 5px;
+    font-size: 16px;
+}
+
+table a {
+    padding-left: 0px;
+}
+
+.last-update-text {
+    font-size: 12px;
+}
