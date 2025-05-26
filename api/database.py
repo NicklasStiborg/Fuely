@@ -1,4 +1,8 @@
 import sqlite3
+import os.path
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+db_path = os.path.join(BASE_DIR, "data.db")
 
 #queries
 CREATE_TABLE = "CREATE TABLE IF NOT EXISTS fuels (id INTEGER PRIMARY KEY, date DATE, provider_name TEXT, price_95 FLOAT, price_d FLOAT);"
@@ -10,7 +14,7 @@ GET_BEST_PRICE_D = "SELECT * FROM fuels ORDER BY price_d LIMIT 1;"
 GET_NEWEST_PRICES = "SELECT * FROM fuels ORDER BY date DESC LIMIT 6;"
 
 def connect():
-    return sqlite3.connect("data.db", check_same_thread=False)
+    return sqlite3.connect(db_path, check_same_thread=False)
 
 def createTables(connection):
     with connection:
